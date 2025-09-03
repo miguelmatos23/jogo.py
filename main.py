@@ -11,5 +11,5 @@ while True:
   for event in pygame.event.get():
       if event.type == pygame.QUIT:
           pygame.quit() #fechar janela
-          print('Fechando em 3,2,1...'
+          print('Fechando em 3,2,1...')
           quit() #fecha a janela
