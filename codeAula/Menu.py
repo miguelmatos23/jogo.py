@@ -2,16 +2,16 @@
 # -*- coding: utf-8 -*-
 
 import pygame.image
-from pygame import Surface, rect
+from pygame import Surface
 from pygame.font import Font
 
-from codeAula.const import WINDOW_WIDTH, COLOR_RED, MENU_OPTION, COLOR_WHITE, COLOR_ORANGE
+from codeAula.const import WINDOW_WIDTH, COLOR_RED, MENU_OPTION, COLOR_WHITE
 
 
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load('./asset/MenuBg.png').convert_alpha()
+        self.surf = pygame.image.load('./asset/MenuBg2.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def run(self):
@@ -19,11 +19,11 @@ class Menu:
         pygame.mixer.music.play(-1)
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(text_size=70, text="RJ", text_color=COLOR_RED, text_center_pos=((WINDOW_WIDTH / 2), 80))
-            self.menu_text(text_size=70, text="Ñ É DISNEY", text_color=COLOR_RED,text_center_pos=((WINDOW_WIDTH / 2), 140))
+            self.menu_text(text_size=40, text="RJ", text_color=COLOR_WHITE, text_center_pos=((WINDOW_WIDTH / 2), 40))
+            self.menu_text(text_size=40, text="Ñ É DISNEY", text_color=COLOR_RED,text_center_pos=((WINDOW_WIDTH / 2), 70))
 
             for i in range(len(MENU_OPTION)):
-                self.menu_text(text_size=30, text= MENU_OPTION[i], text_color=COLOR_WHITE, text_center_pos=((WINDOW_WIDTH / 2), 380 + 50 * i))
+                self.menu_text(text_size=30, text= MENU_OPTION[i], text_color=COLOR_WHITE, text_center_pos=((WINDOW_WIDTH / 2), 160 + 50 * i))
 
 
             pygame.display.flip()

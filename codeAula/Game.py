@@ -1,6 +1,6 @@
 import pygame
 
-from codeAula.Menu.Menu import Menu
+from codeAula.Menu import Menu
 from codeAula.const import WINDOW_WIDTH, WINDOW_HEIGHT
 
 
