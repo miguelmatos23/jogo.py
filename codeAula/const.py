@@ -1,0 +1,16 @@
+#C
+COLOR_ORANGE = (255, 192, 203)
+COLOR_RED = (255, 0, 0)
+COLOR_GRAY = (128, 128, 128)
+COLOR_WHITE = (255, 255, 255)
+
+#M
+MENU_OPTION = ('NEW GAME 1P',
+               'NEW GAME 2P - COOPERATIVE',
+               'NEW GAME 2P - COMPETITIVE',
+               'SCORE',
+               'EXIT')
+
+#W
+WINDOW_WIDTH=900
+WINDOW_HEIGHT=700
