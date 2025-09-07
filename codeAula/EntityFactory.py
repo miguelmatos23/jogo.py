@@ -1,5 +1,6 @@
 from codeAula.Background import Background
-from codeAula.const import WINDOW_WIDTH
+#from codeAula.Player import Player
+from codeAula.const import WINDOW_WIDTH, WINDOW_HEIGHT
 
 
 class EntityFactory:
@@ -13,3 +14,5 @@ class EntityFactory:
                     list_bg.append(Background(f'Level1Bg{i+1}', position))
                     list_bg.append(Background(f'Level1Bg{i+1}', (WINDOW_WIDTH, 0)))
                 return list_bg
+           # case'Player1':
+                return  Player('Player1', (10, WINDOW_HEIGHT / 2))
